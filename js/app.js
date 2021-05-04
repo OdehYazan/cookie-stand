@@ -50,7 +50,7 @@ Sales.prototype.render = function () {
 };
 
 
-let tableHead =function(){
+let createTable =function(){
   let head =document.createElement('thead');
   tableEl.appendChild(head);
   let tr1 = document.createElement('tr');
@@ -66,9 +66,11 @@ let tableHead =function(){
   let thE2 = document.createElement('th');
   tr1.appendChild(thE2);
   thE2.textContent ='Daily Location Total' ;
-};
+  for(let ar=0;ar<cookiesLocations.length;ar++){
+    cookiesLocations[ar].render();
+  }
 
-let tableFoot = function(){
+  // let tableFoot = function(){
   let fooTer =document.createElement('tfoot');
   tableEl.appendChild(fooTer);
   let tr3 = document.createElement('tr');
@@ -109,11 +111,11 @@ let paris = new Sales('PARIS',20,38,2.3);
 let lima = new Sales('LIMA',2,16,4.6);
 
 
-tableHead();
-seattle.render();
-tokyo.render();
-dubai.render();
-paris.render();
-lima.render();
-tableFoot();
+createTable();
+// seattle.render();
+// tokyo.render();
+// dubai.render();
+// paris.render();
+// lima.render();
+// tableFoot();
 
