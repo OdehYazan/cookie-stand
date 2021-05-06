@@ -1,6 +1,6 @@
 html{
     color:#008dff;
-    font-size: larger;
+    font-size: larger; 
     /* background-color:rgb(141, 25, 128); */
     background-image: url(https://cdn.hipwallpaper.com/i/48/18/6igSFG.jpg);
     background-size:cover;
@@ -9,7 +9,11 @@ html{
     background-position: center;
 
 }
-td ,th{
+form {
+    border: 1px solid burlywood;
+}
+
+ td ,th{
     border: 2px solid gray;
 }
 body {

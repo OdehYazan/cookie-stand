@@ -69,6 +69,7 @@ let tableHead =function(){
 };
 
 let tableFoot = function(){
+
   let fooTer =document.createElement('tfoot');
   tableEl.appendChild(fooTer);
   let tr3 = document.createElement('tr');
@@ -95,7 +96,33 @@ let tableFoot = function(){
 
 };
 
+function removeRow (){
 
+  // document.getElementById('createTable').deleteRow(0);
+  let table = document.getElementById('createTable');
+  let rowCount = table.rows.length;
+
+  table.deleteRow(rowCount -1);
+
+}
+
+let InfoForm =document.getElementById('cookie-stand-form');
+InfoForm.addEventListener('submit',locationAdd);
+function locationAdd(event){
+  event.preventDefault();
+  let shopName = event.target.shopName.value;
+  let minHourlyCustomers = event.target.minHourlyCustomers.value;
+  let maxHourlyCustomers = event.target.maxHourlyCustomers.value;
+  let avgCookie = event.target.avgCookie.value;
+  let newLocation = new Sales(shopName, minHourlyCustomers, maxHourlyCustomers, avgCookie);
+  newLocation.render();
+  removeRow();
+  tableFoot();
+
+
+
+
+}
 
 
 let seattle = new Sales('SEATTLE', 23, 65, 6.3);

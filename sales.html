@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,36 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <table id="createTable"></table>
     <header></header>
-    <main></main>
+    <main>
+        <form action= "" id="cookie-stand-form">
+          <fieldset>
+           <legend> 
+            ADD LOCATION INFO
+           </legend>
+
+           <label for="shopName">* Location</label>
+           <input id="shopName" name="shopName" placeholder="Store Location" type="text">
+
+           <label for="minHourlyCustomers">* Min Hourly Customers</label>
+           <input  id="minHourlyCustomers" name="minHourlyCustomers" placeholder="Minimum" type="number">
+
+           <label for="maxHourlyCustomers">* Max Hourly Customers</label>
+           <input  id="maxHourlyCustomers" name="maxHourlyCustomers" placeholder="Maximum" type="number">
+
+           <label for="avgCookie">* Average Cookie</label>
+           <input  id="avgCookie" name="avgCookie" placeholder="Average Cookie" type="float">
+
+           <input type="submit" value="ADD">
+
+          </fieldset>
+        </form>
+        <table id="createTable"></table>
+    </main>
     <footer></footer>
     <script src="js/app.js"></script>
 </body>
+
 </html>
