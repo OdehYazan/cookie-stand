@@ -5,7 +5,7 @@
 html{
     /* color:#008dff; */
     font-size: larger; 
-    background-color:rgb(237, 234, 234); 
+    background-color:lightgray; 
     /* background-image: url(https://cdn.hipwallpaper.com/i/48/18/6igSFG.jpg);
     background-size:cover;
     background-repeat: no-repeat;
@@ -14,16 +14,13 @@ html{
 
 }
 form {
-    border: 1px solid burlywood;
+    border: 3px solid rgb(0, 0, 0);
 }
 
  td ,th{
     border: 2px solid gray;
 }
-body {
-    
-    padding:20px;
-}
+
 mark{
     font-family: 'Zilla Slab Highlight', cursive;
     color: tomato;
@@ -41,18 +38,34 @@ text{
 
 }
 
+body {
+    
+    padding:20px;
+    padding-top: 0px;
+}
+
+
+ body, main{
+     /* background-color: tomato;
+     */
+}
+
 
 h1{
     font-family: 'Girassol', cursive;
     text-align: center;
     font-weight: bolder;
     font-size: 50px;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
 }
 nav {
-    
-    position:static;
+    display: block;
+    position:fixed;
+    margin-top: 0px;
+    width: 97%;
+
     /* background-color: rgb(254, 255, 255); */
     background-color: rgb(48, 80, 80);
    
@@ -90,32 +103,127 @@ section{
     padding-top: 30px;
 }
 #left{
-    width: 45%;
+    width: 48%;
     float: left;
+    
+    
 }
+    
+
+
+
 #right{
-    width: 45%;
+    width: 48%;
     float: right;
+    margin-left: 10px;
+    
 }
 
 
 #left img{
     width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     margin-top: 30px;
 }
 #right img{
     width: 100%;
-    display: block;
+    /* display: block;
     margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    margin-right: auto; */
+    margin-bottom: 40px;
 }
 p{
     padding-top: 30px;
-    font-family: 'Girassol', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     text-indent: 20px;
     font-weight: normal;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    
+}
+
+
+#left  div {
+   padding-top: 30px;
+    
+}
+#left  div img {
+    display: inline-block;
+    height:100px;
+    width: 100px;
+    margin-bottom: 35px;
+    
+
+}
+#left  div img:hover{
+    width: 200px;
+    height: 200px;
+    
+}
+#left article:last-child img{
+    height: 200px;
+    width: 150px;
+    float: left;
+}
+
+
+
+h2{
+   
+    padding-top: 50px;
+ font-family: 'Girassol', cursive;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+    
+
+}
+ol{
+    padding: 30px;
+    
+}
+ol li {
+    padding: 10px;
+    margin-left:10px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+   
+    
+}
+.hideInfo{
+    display: none;
+}
+ol li:hover .hideInfo{
+    color: tomato;
+    display:inline-block;
+    z-index: index;
+  
+}
+
+footer{
+    clear: both;
+    
+   
+    background-color: rgb(48, 80, 80);;
+}
+h4{
+    
+    color:rgb(204, 203, 203);
+    
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+h5{
+    padding-top: 10px;
+    color:rgb(204, 203, 203);
+    font-size: small;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    
+}
+.locations{
+    text-align: center;
+    text-decoration-line:underline;
 }
