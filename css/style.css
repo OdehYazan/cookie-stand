@@ -1,12 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
 html{
-    color:#008dff;
+    /* color:#008dff; */
     font-size: larger; 
-    /* background-color:rgb(141, 25, 128); */
-    background-image: url(https://cdn.hipwallpaper.com/i/48/18/6igSFG.jpg);
+    background-color:rgb(237, 234, 234); 
+    /* background-image: url(https://cdn.hipwallpaper.com/i/48/18/6igSFG.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; */
 
 }
 form {
@@ -18,7 +22,7 @@ form {
 }
 body {
     
-    
+    padding:20px;
 }
 mark{
     font-family: 'Zilla Slab Highlight', cursive;
@@ -34,5 +38,84 @@ text{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:#008dff;
     font-size: larger;
+
+}
+
+
+h1{
+    font-family: 'Girassol', cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+nav {
     
+    position:static;
+    /* background-color: rgb(254, 255, 255); */
+    background-color: rgb(48, 80, 80);
+   
+}
+nav li {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+li a:hover{
+    color:red;
+    background-color: rgb(237, 234, 234);
+}
+
+
+nav li a {
+    text-decoration: none;
+    color:rgb(204, 203, 203);
+    
+    font-family: 'Lobster', cursive;
+    padding: 5px;
+
+
+}
+
+
+nav img{
+    width: 100px;
+    float:right;
+    
+}
+   
+section{
+    padding-top: 30px;
+}
+#left{
+    width: 45%;
+    float: left;
+}
+#right{
+    width: 45%;
+    float: right;
+}
+
+
+#left img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+#right img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+p{
+    padding-top: 30px;
+    font-family: 'Girassol', cursive;
+    text-indent: 20px;
+    font-weight: normal;
 }
